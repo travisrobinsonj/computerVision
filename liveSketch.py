@@ -32,7 +32,7 @@ if __name__ == '__main__':
 		ret, frame = cap.read()
 		cv2.imshow('Live sketcher image', sketch(frame))
 		if cv2.waitKey(1) == 13 : # 13 is enter key
-			cv2.imwrite("my_sketch.jpg",sketch(frame))
+			cv2.imwrite("./images/my_sketch.jpg",sketch(frame))
 			break
 
 	#release the camera and close the window

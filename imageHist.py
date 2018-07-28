@@ -20,7 +20,7 @@ def plotImage(image):
 		plt.plot(hist2, color=col, label=col)
 		plt.xlim([0,256])
 		plt.legend()
-	plt.savefig("histogram1.png")
+	plt.savefig("./images/histogram1.png")
 	plt.show()
 	
 def plotRavImage(image):
@@ -28,7 +28,7 @@ def plotRavImage(image):
 	hist1 = cv2.calcHist([img],[0],None,[256],[0,256])
 	#plot the histogram, ravel() flatten image array
 	plt.hist(img.ravel(), 256,[0,256])
-	plt.savefig('histogram2.png')
+	plt.savefig('./images/histogram2.png')
 	plt.show()
 
 
